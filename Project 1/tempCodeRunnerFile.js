@@ -8,20 +8,17 @@ let appData = {
     optionalExpenses: {},
     income: [],
     savings: false
-};
+}
 
 
 
 
-for (let i = 0; i < 2; i++) {
-    let a = prompt("Введите обязательную статью расходов в этом месяце"),
+for (let i = 0, i < 2, i++) {
+    let a = prompt("Введите обязательную статью расходов в этом месяце");
         b = prompt("Во сколько обойдется?");
 
     appData.expenses[a] = b;
 }
 
 
-alert(appData.budget/30);
-
-/* document.getElementById("budgetAmount");
-document.write() */
+alert(appData.budget/30)
